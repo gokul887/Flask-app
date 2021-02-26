@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% if user: %}
+        <h1>Hello {{ user }}</h1>
+    {% else: %}
+        <h1>Please log in</h1>
+    {% endif %}
+{% endblock content %}

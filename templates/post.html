@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts: %}
+        <h4 style="color: orange">{{ post.Author }}</h4>
+        <p>{{ post.p }}</p>
+    {% endfor %}
+{% endblock content %}
